@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Projeto palpitão",
   "main": "index.js",
+  "engine": {
+    "node": "~6.11.1",
+    "npm": "~3.10.10",
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-serve": "node --harmony ./serve.js"
