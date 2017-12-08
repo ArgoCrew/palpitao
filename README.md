@@ -8,4 +8,4 @@ API REST using NodeJS to back-end &amp; AngularJS in the front-end.
 
 
 
-![alt text](https://github.com/ahsouza/palpitao/blob/master/public/shared/images/1.png/1.png)
+![alt text](https://github.com/ahsouza/palpitao/blob/master/public/shared/images/1.png)
