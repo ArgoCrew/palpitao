@@ -1,5 +1,5 @@
 # PALPITÃO
-API REST using NodeJS to back-end &amp; AngularJS in the front-end.
+REST API using NodeJS for backend; AngularJS on the front end; MySQL Database.
 
 
 
