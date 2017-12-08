@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="row">
+      <div class="col-xs-12 col-lg-12 col-md-12">
+        <div class = "div-numeros animated fadeInUp">
+          <ul>
+            <!-- TODO: ng repeat-->
+            <li ng-repeat = "palpite in $ctrl.palpites">
+              <ol>
+                <li ng-repeat = "n in palpite.numeros"  class = "li-numeros animated fadeInUp">
+                  <div class="esfera animated zoomIn">
+                    {{n}}
+                  </div>
+                </li>
+                <hr>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-xs-8">
+        <div class = "concurso animated fadeInLeft">
+          <h4>Último Concurso 1991</h4>
+          <h4>Resultado: 11-23-42-50-67-45</h4>
+          <h4>Data: 25/11/2017 </h4>
+          <h4>Prêmio: R$58.322.202,00</h4>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>

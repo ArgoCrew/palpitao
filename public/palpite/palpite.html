@@ -1,0 +1,23 @@
+  <!-- begin header -->
+<div class="jumbotron div-jumbotron">
+  <h1 class="text-center titulo animated slideInDown">
+    MINHA MEGA SENA
+  </h1>
+  <p ng-if="mensagem.texto">
+    {{mensagem.texto}}
+  </p>
+</div>  
+<!-- End header -->
+<!-- Button Palpitão -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 col-lg-12 animated zoomIn">
+        <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
+        <a ng-click="exibir();" class="btn btn-primary btn-palpitar">
+          <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
+          <div class="descricao text-center" >Palpitão</div>
+        </a>
+    </div>
+  </div>
+</div>
+  <!-- end Button -->
