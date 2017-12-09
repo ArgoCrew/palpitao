@@ -4,7 +4,7 @@ REST API using NodeJS for backend; AngularJS on the front end; MySQL Database.
 
 
 
-> _[Link da Aplicação Palpitão](http://minhamegasena.com.br)_
+> _[Play Palpitão](https://palpitao.herokuapp.com/#!/palpites)_
 
 
 
