@@ -1,10 +1,12 @@
 const HTTPServer = require('express')
+const compression = require('compression');
 const ErrorHandler = require('errorhandler')
 const BodyParser = require('body-parser');
 
 const palpite = require('./app/palpite/palpite.module')
 
 const app = HTTPServer()
+app.use(compression());
 app.use(HTTPServer.static('./public'));
 app.use(BodyParser.urlencoded({extend: true}));
 app.use(ErrorHandler())
