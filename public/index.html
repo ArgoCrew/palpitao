@@ -8,15 +8,18 @@
   <!--Import materialize.css-->
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
   <title>Bem-vindo</title>
-  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <!-- TODO: JUNTAR E MINIFICAR COM WEBPACK/GULP -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- TODO: MOVER PARA O PROJETO -->
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/animate.css">
-  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/style.css">
 </head>
 <body class="container">
   <div ng-view>
   	<h1>ANGULAR INTEGRADO NO PROJETO PALPITÃO</h1>
   </div>
+  <!-- TODO: JUNTAR E MINIFICAR COM WEBPACK/GULP -->
   <script src="/vendor/angular/angular.min.js"></script>
   <script src="/vendor/angular-route/angular-route.min.js"></script>
   <script src="/vendor/angular-resource/angular-resource.min.js"></script>
@@ -27,6 +30,5 @@
   <script src="palpite/palpite-megasena.service.js"></script>
   <script src="palpite/palpite-megasena.component.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  
 </body>
 </html>
