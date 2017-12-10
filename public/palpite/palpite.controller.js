@@ -21,22 +21,9 @@ angular.module('palpite.megasena')
     }
     $scope.exibir = function() {
     sugerirPalpitesMegasena();
-      $scope.sugerirPalpitesMegasena = sugerirPalpitesMegasena;
-        
+      $scope.sugerirPalpitesMegasena = sugerirPalpitesMegasena;    
     }
-    // function deletarPalpite() {
-    //   PalpiteMegasenaDelete.query(
-    //       function(palpite) {
-    //         $scope.palpiteMegasena = palpite;
-    //         PalpiteMegasenaDelete.delete(palpiteMegasena);
-    //       }
-    //     )
-    // }
 
-    // $scope.del = function() {
-    //   deletarPalpite();
-
-    // }
     function hasClassName(inElement, inClassName)
     {
         var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
