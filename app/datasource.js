@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const MYSQL_URI = process.env.MYSQL_URI || process.env.JAWSDB_URL || 'mysql://root:3n$01Enzo@localhost:3306/node-palpitao';
+const MYSQL_URI = process.env.MYSQL_URI || process.env.JAWSDB_URL || 'mysql://root:P@ssw0rd@localhost:3306/papitao-node';
 
 const mysql = new Sequelize(MYSQL_URI, {
   pool: {

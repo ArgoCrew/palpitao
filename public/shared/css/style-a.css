@@ -1,0 +1,381 @@
+@charset "UTF-8";
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 1px transparent;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+  nav {
+    display: none;
+  }
+  div.esfera {
+    display: none;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .div-numeros ol li {
+    display: inline;
+    font-size: 22px;    
+  }
+  .div-numeros {
+    display: none;
+  }
+  .div-numeros-mobile {
+    display: inline-block;
+  }
+  div.esfera-mobile {
+    visibility: visible;
+  }
+  .expandcollapse-item {
+    margin-top: 50px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  nav {
+    display: none;
+  }
+  div.esfera {
+    display: none;
+  }
+  div.esfera-mobile {
+    display: inline-block;
+  }
+  .expandcollapse-item {
+    margin-top: 50px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  div.esfera {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .div-numeros ol li {
+    font-size: 28px;
+  }
+  div.esfera-mobile {
+    display: inline-block;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .div-numeros ol li {
+    font-size: 72px;
+  }
+  div.div-numeros-mobile {
+    visibility: hidden;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .div-numeros ol li {
+    font-size: 72px;
+  }
+  div.div-numeros-mobile {
+    visibility: hidden;
+  }
+}
+/*--------------------STYLE DEAFULT------------------*/
+
+.div-numeros {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+.div-numeros li {
+  display:inline;
+  color: black;
+}
+.div-numeros-mobile {
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+.div-numeros-mobile li{
+  display:inline;
+  color: black;
+}
+div.esfera-mobile {
+  display: inline-block;
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background-color: #fffcea;
+  background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
+  margin: 0px auto;
+  -ms-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+}
+div.esfera-mobile:hover {
+  width: 28px;
+  height: 28px;
+} 
+.titulo {
+  color: blue;
+  font-weight: bold;
+}
+/*Div Superior*/
+div.div-jumbotron {
+  background-color: #00923f;
+  color: white;
+}
+div.esfera {
+  display: inline-block;
+  font-size: 36px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #fffcea;
+  background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
+  margin: 0px auto;
+  -ms-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+}
+div.esfera:hover {
+  width: 48px;
+  height: 48px;
+} 
+ /*Button 'Palpitar'*/
+.btn-palpitar {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  animation: float 3s ease-out infinite;
+  position:absolute;
+  left:50%;
+  top:30%;
+  margin-left:-50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: -moz-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: -ms-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: -o-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: linear-gradient(to bottom, #3498db, #2bb8ac);
+  opacity: 0.8;
+}
+.btn-palpitar:hover {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background: #00923F;  
+  background-image: -webkit-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: -moz-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: -ms-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: -o-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: linear-gradient(to bottom, #00923F, #0eeb6e);
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
+.descricao {
+  display: none;
+  margin-top: 32px;
+  margin-left: -2px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.8);
+}
+.img-trevo{
+  width: 80px;
+  height: 80px;
+  margin-left: -2px;
+  margin-top: 4px;
+}
+.btn-palpitar:hover {
+  -webkit-animation-play-state: paused;
+}
+.btn-palpitar:hover .descricao{
+  display: block;
+}
+.btn-palpitar:hover .img-trevo{
+  display: none;
+}
+.concurso-descricao {
+
+}
+/******EFEITOS HOVER BUTTON *******/
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }   
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.btns {
+  text-align: center;
+  margin-top: 50px;
+}
+.efeito {
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.efeito-1 {
+  background-color: #28348A;
+}
+.efeito-1:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 64px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+.efeito-1:hover:before {
+  width: 100%;
+}
+.efeito-2 {
+  background-color: #772150;
+}
+.efeito-2:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+.expandcollapse-item {
+  overflow: hidden;
+  border-top:1px solid blue;
+}
+.expandcollapse-heading-collapsed {
+  cursor: pointer;
+  padding: 0px 20px;
+  position: relative;
+  z-index: 100000000;
+  color: black; 
+  background-color: white;
+  
+}
+.expandcollapse-item:first-of-type {
+  border-top:0px;
+}
+.expandcollapse-heading-collapsed p{
+  font-size: 16px;
+  font-weight: normal;
+  margin:0px;
+}
+.expandcollapse-heading-expanded {
+  cursor: pointer;
+  z-index: 100000000;
+  padding: 12px 20px;
+  position: relative;
+  color: white; 
+  background-color: white;
+}
+.expandcollapse-heading-expanded p{
+  font-size: 16px;
+  font-weight: bold;
+  margin:0px;
+}
+.expandcollapse-heading-collapsed > span,
+.expandcollapse-heading-expanded > span {
+  position:absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 0px;
+}
+.expand-collapse-content {
+  padding: 10px;
+}
+/*
+animation:*/
+.slideDown.ng-hide {
+  height:0;
+  transition:height 0.35s ease;
+  overflow:hidden;
+  position:relative;
+}
+.slideDown {
+  height:141px;
+  transition:height 0.35s ease;
+  overflow:hidden;
+  position:relative;
+}
+.slideDown.ng-hide-remove,
+.slideDown.ng-hide-add {
+  display:block!important;
+}
+.slideDown.ng-hide-add {
+  animation-name: hide;
+  -webkit-animation-name: hide;  
+
+  animation-duration: .5s; 
+  -webkit-animation-duration: .5s;
+
+  animation-timing-function: ease-in;  
+  -webkit-animation-timing-function: ease-in;  
+}
+.slideDown.ng-hide-remove {
+  animation-name: show;
+  -webkit-animation-name: show;  
+  animation-duration: .5s; 
+  -webkit-animation-duration: .5s;
+  animation-timing-function: ease-out;  
+  -webkit-animation-timing-function: ease-out;  
+}

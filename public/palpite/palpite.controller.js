@@ -4,6 +4,8 @@ angular.module('palpite.megasena')
     $scope.palpitesMegasena = [];
     //variavel de texto para avisos;
     $scope.mensagem = {textos: ''};
+    // Variavel para ativar funçao COLLAPSED em Angular.js
+    $scope.active = true;
     //Função AngularJS para pegar todos palpites
     function sugerirPalpitesMegasena() {
       PalpiteMesena.query(
