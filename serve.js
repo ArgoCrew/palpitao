@@ -54,11 +54,11 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   })
 });
 
-const ENV_PREFIX = process.env.ENV_PREFIX;
+const SERVICE_PREFIX = process.env.SERVICE_PREFIX;
 
-const settings = {
-  app: {
-    port: process.env.PORT || process.env[`${ENV_PREFIX}_PORT`] || 3000
-  }
-}
-app.listen(settings.app.port, () => console.log('Example app listening on port 3000!'))
+const PORT = process.env.PORT || process.env[`${SERVICE_PREFIX}_PORT`] || 8080,
+      IP   = process.env.IP   || process.env[`${SERVICE_PREFIX}_IP`] || '0.0.0.0';
+
+app.listen(settings.app.port, function() {
+  console.log(`Example app listening on port ${PORT}!`);
+})
