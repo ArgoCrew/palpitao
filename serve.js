@@ -56,7 +56,7 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
 
 const settings = {
   app: {
-    port: process.env.PORT || 3000
+    port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000
   }
 }
 app.listen(settings.app.port, () => console.log('Example app listening on port 3000!'))
