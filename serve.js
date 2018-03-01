@@ -59,6 +59,6 @@ const SERVICE_PREFIX = process.env.SERVICE_PREFIX;
 const PORT = process.env.PORT || process.env[`${SERVICE_PREFIX}_PORT`] || 8080,
       IP   = process.env.IP   || process.env[`${SERVICE_PREFIX}_IP`] || '0.0.0.0';
 
-app.listen(settings.app.port, function() {
+app.listen(PORT, IP, function() {
   console.log(`Example app listening on port ${PORT}!`);
 })
