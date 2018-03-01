@@ -54,11 +54,11 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   })
 });
 
-console.log(process.env)
+const ENV_PREFIX = process.env.ENV_PREFIX;
 
 const settings = {
   app: {
-    port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000
+    port: process.env.PORT || process.env[`${ENV_PREFIX}_PORT`] || 3000
   }
 }
 app.listen(settings.app.port, () => console.log('Example app listening on port 3000!'))
