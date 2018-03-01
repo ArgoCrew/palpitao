@@ -8,8 +8,9 @@
     "npm": "~3.10.10"
   },
   "scripts": {
+    "start": "node --harmony ./serve.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-serve": "node --harmony ./serve.js"
+    "start": "node --harmony ./serve.js"
   },
   "author": "",
   "license": "ISC",
