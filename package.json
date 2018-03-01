@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "node --harmony ./serve.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --harmony ./serve.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
