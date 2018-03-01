@@ -54,6 +54,8 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   })
 });
 
+console.log(process.env)
+
 const settings = {
   app: {
     port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000
