@@ -1,0 +1,23 @@
+  <!-- BUTTON PALPITÃO -->
+  <div class="container-fluid">
+    <!-- begin header -->
+    <div class="jumbotron div-jumbotron-quina">
+      <h1 class="text-center titulo animated slideInDown">
+        MINHA QUINA
+      </h1>
+      <p ng-if="mensagem.texto">
+        {{mensagem.texto}}
+      </p>
+    </div>  
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 animated zoomIn">
+        <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
+        <!-- BUTTON TO DESKTOPS,TABLETS AND LARGE DECIVES -->
+        <a ng-click="" class="btn btn-primary btn-palpitar-quina" data-toggle="tooltip" data-placement="bottom" title="Não existe possibilidades para este jogo, inscreva-se e fique por dentro de nossas novidades">
+          <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
+          <div class="descricao text-center" >Palpitão</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END BUTTON -->
