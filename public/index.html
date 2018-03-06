@@ -3,27 +3,94 @@
 <html ng-app="palpitao">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
   <!-- inject:css -->
   <!-- endinject -->
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
-  <title>Bem-vindo</title>
+  <title>Palpitão - Possibilidades de acertos para jogos</title>
   <!-- TODO: JUNTAR E MINIFICAR COM WEBPACK/GULP -->
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
   <!-- TODO: MOVER PARA O PROJETO -->
   <link rel="stylesheet" href="shared/css/animate.css">
   <link rel="stylesheet" href="shared/css/style-a.css">
+    <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="shared/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <!-- Plugin CSS -->
+  <link rel="stylesheet" href="shared/device-mockups/device-mockups.min.css">
+    <!-- Custom styles for this template -->
+  <link href="shared/css/new-age.min.css" rel="stylesheet">
+
+
+  <style>
+
+</style>
 </head>
-<body class="container">
+<body id="page-top">
+
+    <!-- Navigation -->
+<!--       <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img alt="Brand" width="35px" height="35px" src="../shared/logo-vertical.jpg">
+          </a>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a ng-href="/">Início</a></li>
+                <li role="presentation"><a class="nav-link-megasena" ng-href="/#!palpites/megasena">Mega Sena</a></li>
+                <li role="presentation"><a class="nav-link-lotomania" ng-href="/#!palpites/lotomania" data-toggle="tooltip" data-placement="bottom" title="Jogo ainda não disponível" href="#">Loto Mania</a></li>
+                <li role="presentation"><a class="nav-link-lotofacil" ng-href="/#!palpites/lotofacil" data-toggle="tooltip" data-placement="bottom" title="Jogo ainda não disponível" href="#">Loto Fácil</a></li>
+                <li role="presentation"><a class="nav-link-quina" ng-href="/#!palpites/quina" data-toggle="tooltip" data-placement="bottom" title="Jogo ainda não disponível" href="#">Quina</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+ -->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+                 <i class="fa fa-bars" aria-hidden="true"></i>
+             </button>
+             <a ng-href="/"><span class="navbar-brand">PALPITÃO</span></a>
+         </div>
+         <div class="collapse navbar-collapse" id="top-navbar">
+             <ul class="nav navbar-nav navbar-right">
+                <li role="presentation"><a class="nav-link-megasena" id="nav-link-megasena" ng-href="/#!palpites/megasena">Mega Sena</a></li>
+                <li role="presentation"><a class="nav-link-lotomania" id="nav-link-lotomania" ng-href="/#!palpites/lotomania" data-toggle="tooltip" data-placement="bottom" title="Jogo ainda não disponível" href="#">Loto Mania</a></li>
+                <li role="presentation"><a class="nav-link-lotofacil" id="nav-link-lotofacil" ng-href="/#!palpites/lotofacil" data-toggle="tooltip" data-placement="bottom" title="Jogo ainda não disponível" href="#">Loto Fácil</a></li>
+                <li role="presentation"><a class="nav-link-quina" id="nav-link-quina" ng-href="/#!palpites/quina" data-toggle="tooltip" data-placement="bottom" title="Jogo ainda não disponível" href="#">Quina</a></li>
+             </ul>
+         </div>
+     </div>
+ </nav>
+
+
+
+<!-- END-NAV-BAR HEADER -->
   <div ng-view>
-  	<h1>ANGULAR INTEGRADO NO PROJETO PALPITÃO</h1>
+    <div id="loading">
+      <ul class="bokeh">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
   </div>
   <!-- inject:js -->
   <!-- endinject -->
-  <!-- TODO: JUNTAR E MINIFICAR COM WEBPACK/GULP -->
+  <script src="/shared/js/new-age.min.js"></script>
+  <script src="/shared/js/jquery-easing.min.js"></script>
+  <script src="/shared/js/bootstrap.bundle.min.js"></script>
+
   <script src="/vendor/angular/angular.min.js"></script>
   <script src="/vendor/angular-route/angular-route.min.js"></script>
   <script src="/vendor/angular-resource/angular-resource.min.js"></script>
@@ -34,5 +101,7 @@
   <script src="palpite/palpite-megasena.service.js"></script>
   <script src="palpite/palpite-megasena.component.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

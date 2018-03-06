@@ -1,38 +1,163 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" width="10px" height="10px" src="../shared/logo-vertical.jpg">
-      </a>
-    </div>
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="active"><a href="#">Megasena</a></li>
-      <li role="presentation"><a data-toggle="tooltip" data-placement="bottom" title="Jogo não disponível" href="#">Lotomania</a></li>
-    </ul>
-  </div>
-</nav>
-<!-- END HEADER -->
-
-  <!-- BUTTON PALPITÃO -->
-  <div class="container-fluid">
-    <!-- begin header -->
-    <div class="jumbotron div-jumbotron">
-      <h1 class="text-center titulo animated slideInDown">
-        MINHA MEGASENA
-      </h1>
-      <p ng-if="mensagem.texto">
-        {{mensagem.texto}}
-      </p>
-    </div>  
-    <div class="row">
-      <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 animated zoomIn">
-        <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
-        <!-- BUTTON TO DESKTOPS,TABLETS AND LARGE DECIVES -->
-        <a ng-click="exibir();" class="btn btn-primary btn-palpitar">
-          <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
-          <div class="descricao text-center" >Palpitão</div>
-        </a>
+<br><br><br>
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5  animated slideInLeft">Com o <b>Palpitão</b> agora ficou mais fácil de acertar em jogos da loteria da Caixa!<br><br>Mais de <b>36 Milhões</b> em possibilidades para <b>Mega Sena</b>. <br><br></h1><h2 class="mb-5 animated slideInUp">Jogue Grátis!</h2><br>
+              <a href="#jogos" class="btn btn-outline btn-xl js-scroll-trigger animated fadeIn">Quero Jogar!</a>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait white">
+                <div class="device  animated slideInUp">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="/../shared/img/screen-mobile.png" class="img-fluid" id="screen-mobile" alt="screen aplicação mobile">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </header>
+
+    <section class="download bg-primary text-center" id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">Discover what all the buzz is about!</h2>            
+            <p>Our app is available on any mobile device! Download now to get started!</p>
+            <div class="badges">
+              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="jogos">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Unlimited Features, Unlimited Fun</h2>
+          <p class="text-muted">Check out what you can do with this app theme!</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-screen-smartphone text-primary"></i>
+                    <h3>Mega Sena</h3>
+                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-camera text-primary"></i>
+                    <h3>Loto Fácil</h3>
+                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-present text-primary"></i>
+                    <h3>Loto Mania</h3>
+                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-lock-open text-primary"></i>
+                    <h3>Quina</h3>
+                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Stop waiting.<br>Start building.</h2>
+          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+      <div class="container">
+        <h2>We
+          <i class="fa fa-heart"></i>
+          new friends!</h2>
+        <ul class="list-inline list-social">
+          <li class="list-inline-item social-twitter">
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-facebook">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-google-plus">
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Development in 2018. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+
   <!-- END BUTTON -->

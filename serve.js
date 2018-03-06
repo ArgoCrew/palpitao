@@ -57,8 +57,8 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
 const SERVICE_PREFIX = process.env.SERVICE_PREFIX;
 
 const PORT = process.env.PORT || process.env[`${SERVICE_PREFIX}_PORT`] || 8080,
-      IP   = process.env.IP   || process.env[`${SERVICE_PREFIX}_IP`] || '0.0.0.0';
+      HOST   = process.env.HOST   || process.env[`${SERVICE_PREFIX}_HOST`] || '0.0.0.0';
 
-app.listen(PORT, IP, function() {
+app.listen(PORT, HOST, function() {
   console.log(`Example app listening on port ${PORT}!`);
 })
