@@ -548,13 +548,35 @@ animation:*/
 }
 #nav-link-megasena {
   color: #fff;
-}#nav-link-lotofacil {
+}
+#nav-link-megasena:hover {
   color: #fff;
-}#nav-link-lotomania {
+  background-color: #48b54d;
+}
+#nav-link-lotofacil {
   color: #fff;
+}
+#nav-link-lotofacil:hover {
+  color: #fff;
+  background-color: #d11271;
+}
+#nav-link-lotomania {
+  color: #fff;
+}
+#nav-link-lotomania:hover {
+  color: #fff;
+  background-color: #f2893e;
+}
+#nav-link-lotomania:active {
+  color: #fff;
+  background-color: pink;
 }
 #nav-link-quina {
   color: #fff;
+}
+#nav-link-quina:hover {
+  color: #fff;
+  background-color: #3221b7;
 }
 .nav-link-quina {
   background-color: #23177A;
