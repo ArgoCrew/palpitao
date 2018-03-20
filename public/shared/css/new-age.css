@@ -320,7 +320,7 @@ section.cta .overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+    
 section.contact {
   text-align: center;
 }
@@ -398,9 +398,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #fffffe;
+  background: -webkit-linear-gradient(#e0d6bd,#ece3cc);
+  background: linear-gradient(#1e6be8,#40a8da);
 }
 
 .text-primary {

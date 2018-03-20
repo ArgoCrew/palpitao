@@ -750,6 +750,54 @@ animation:*/
   text-decoration: none;
   border: solid #ffffff 2px;
 }
+#icon-megasena {
+  width: 130px;
+  height: 130px;
+  /*-webkit-transition: -webkit-transform .3s ease-in-out;
+  -ms-transition: -ms-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;  */
+}
+#icon-lotomania {
+  width: 130px;
+  height: 130px;
+}
+#icon-lotofacil {
+  width: 130px;
+  height: 130px;
+}
+#icon-quina {
+  width: 130px;
+  height: 130px;
+}
+#icon-megasena:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+  /*transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);*/
+}
+#icon-megasena:active {
+  
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+}
+#icon-lotomania:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+}
+#icon-lotofacil:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+}
+#icon-quina:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+}
 span {
   font-size: 26px;
   color: #fff;
@@ -767,6 +815,10 @@ span {
 .jogos li:hover {
   transform: scale(1.3);
   z-index: 1;
+}
+
+#indisponivel-txt {
+  text-align: center;
 }
 
 .loading {
@@ -791,4 +843,72 @@ position: absolute;
   top: 35px;
   left: 35px;
   }
+} 
+.tombol-ani {
+  font-family: 'gotham_mediumregular','Montserrat',sans-serif;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  background: #388e3c;
+  max-width: 430px;
+  position: relative;
+  padding: 10px 0px;
+  display: table;
+  text-transform: uppercase;
+  box-shadow: 0 10px 0 -6px #aaa;
+  transition: all 0.2s;
+  top: 0;
+  width: 100%;}
+.tombol-ani:hover {padding:20px 0px; box-shadow:0 6px 0 -6px #bbb; top:2px;background:#388e3c;}
+.tombol-ani * {display:inline-table; vertical-align:middle;  transition:all 0.2s;  transform-style: preserve-3d; }
+.tombol-ani p {max-width: 100%;font-size: 18px;line-height: 16px;text-align: left;font-weight: 800;margin-top: 8px;margin-bottom: 8px;width: 70%;}
+.tombol-ani p span { font-size:9px;font-weight: 400;font-family:'gotham_book','Montserrat',sans-serif;}
+.tombol-ani i { width:16%; text-align:center; font-size:24px !important; z-index:5;}
+.tombol-ani p + i { width:12%; font-size:16px !important; position:relative;right:-8px;}
+.tombol-ani:after { background:#dcedc8; content:''; right:0; position:absolute; top:0; bottom:0; width:12%; z-index:0;}
+.tombol-ani:hover p + i { transform:scale(1.6);}
+
+.tombol-ani2 {
+  font-family: 'gotham_mediumregular','Montserrat',sans-serif;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  background: #1f628d;
+  max-width: 430px;
+  position: relative;
+  padding: 10px 0px;
+  display: table;
+  text-transform: uppercase;
+  box-shadow: 0 10px 0 -6px #aaa;
+  transition: all 0.2s;
+  top: 0;
+  width: 100%;}
+.tombol-ani2:hover {padding:20px 0px; box-shadow:0 6px 0 -6px #bbb; top:2px;background:#233e7d;}
+.tombol-ani2 * {display:inline-table; vertical-align:middle;  transition:all 0.2s;  transform-style: preserve-3d; }
+.tombol-ani2 p {max-width: 100%;font-size: 18px;line-height: 16px;text-align: left;font-weight: 800;margin-top: 8px;margin-bottom: 8px;width:70%;}
+.tombol-ani2 p span { font-size:9px;font-weight: 400;font-family:'gotham_book','Montserrat',sans-serif;}
+.tombol-ani2 i { width:16%; text-align:center; font-size:24px !important; z-index:5;}
+.tombol-ani2 p + i { width:12%; font-size:16px !important; position:relative;right:-8px;}
+.tombol-ani2:after { background:#1b3f92; content:''; right:0; position:absolute; top:0; bottom:0; width:12%; z-index:0;}
+.tombol-ani2:hover p + i { transform:scale(1.6);}
+
+.tombol-ane1{width:42%;display: inline-table !important;margin-top: 30px;}
+.tombol-ane2{width:42%;display: inline-table !important;margin-top: 30px;}
+.tombol-view {
+  background-color: #159DBF !important;
+  border-radius: 0px !important;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 8px 20px !important;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+.tombol-one {display: inline-block;}
+.tombol-one span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;font-size: 1.2rem;font-family:'gotham_mediumregular','Montserrat',sans-serif;}
+.tombol-one span:after {content: '»';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+.tombol-one:hover {background: #e11f28 !important;padding: 12px 30px !important;}
+.tombol-one:hover span {padding-right: 25px;}
+.tombol-one:hover span:after {opacity: 1;right: 0;}
