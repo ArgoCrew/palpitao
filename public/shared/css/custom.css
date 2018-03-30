@@ -106,7 +106,7 @@ div.esfera-mobile:hover {
 
 /*Div Superior*/
 div.div-jumbotron-megasena {
-  background-color: #00923f;
+  background-color: #00923F;
   color: white; }
 
 div.div-jumbotron-lotofacil {
@@ -127,7 +127,7 @@ div.esfera {
   width: 46px;
   height: 46px;
   border-radius: 100px;
-  background-color: #fffcea;
+  background-color: #00923F;
   background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
   margin: 0px auto;
   -ms-border-radius: 100px;
@@ -138,7 +138,7 @@ div.esfera {
   -moz-box-shadow: 1px 3px 1px #666666;
   box-shadow: 1px 3px 1px #666666; }
 
-div.esfera:hover {
+.esfera:hover {
   width: 48px;
   height: 48px; }
 
@@ -162,24 +162,18 @@ div.esfera:hover {
   box-shadow: 1px 3px 1px #666666;
   text-decoration: none;
   border: solid #ffffff 2px;
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: -moz-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: -ms-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: -o-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: linear-gradient(to bottom, #3498db, #2bb8ac); }
+  background: #00923F;
+  background-image: -webkit-linear-gradient(top, #00923F, #00923F);
+  background-image: -moz-linear-gradient(top, #00923F, #00923F);
+  background-image: -ms-linear-gradient(top, #00923F, #00923F);
+  background-image: -o-linear-gradient(top, #00923F, #00923F);
+  background-image: linear-gradient(to bottom, #00923F, #00923F); }
 
 .btn-palpitar:hover {
   -webkit-transition: 0.5s ease-in;
   -moz-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
-  background: #00923F;
-  background-image: -webkit-linear-gradient(top, #00923F, #0eeb6e);
-  background-image: -moz-linear-gradient(top, #00923F, #0eeb6e);
-  background-image: -ms-linear-gradient(top, #00923F, #0eeb6e);
-  background-image: -o-linear-gradient(top, #00923F, #0eeb6e);
-  background-image: linear-gradient(to bottom, #00923F, #0eeb6e);
   text-decoration: none;
   border: solid #ffffff 2px; }
 
@@ -215,16 +209,6 @@ div.esfera:hover {
   -moz-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
-  background: #23177A;
-  background-image: -webkit-linear-gradient(top, #23177A, #23177A);
-  background-image: -moz-linear-gradient(top, #23177A, #23177A);
-  background-image: -ms-linear-gradient(top, #23177A, #23177A);
-  background-image: -o-linear-gradient(top, #23177A, #23177A);
-  background-image: linear-gradient(to bottom, #23177A, #23177A);
-  text-decoration: none;
-  border: solid #ffffff 2px; }
-
-.btn-palpitar-quina:hover {
   -webkit-animation-play-state: paused; }
 
 .btn-palpitar-quina:hover .descricao {
@@ -264,12 +248,6 @@ div.esfera:hover {
   -moz-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
-  background: #FF6028;
-  background-image: -webkit-linear-gradient(top, #FF6028, #FF6028);
-  background-image: -moz-linear-gradient(top, #FF6028, #FF6028);
-  background-image: -ms-linear-gradient(top, #FF6028, #FF6028);
-  background-image: -o-linear-gradient(top, #FF6028, #FF6028);
-  background-image: linear-gradient(to bottom, #FF6028, #FF6028);
   text-decoration: none;
   border: solid #ffffff 2px; }
 
@@ -313,12 +291,6 @@ div.esfera:hover {
   -moz-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
-  background: #B1005F;
-  background-image: -webkit-linear-gradient(top, #B1005F, #B1005F);
-  background-image: -moz-linear-gradient(top, #B1005F, #B1005F);
-  background-image: -ms-linear-gradient(top, #B1005F, #B1005F);
-  background-image: -o-linear-gradient(top, #B1005F, #B1005F);
-  background-image: linear-gradient(to bottom, #B1005F, #B1005F);
   text-decoration: none;
   border: solid #ffffff 2px; }
 
@@ -506,7 +478,11 @@ animation:*/
   color: #fff; }
 
 .nav-link-megasena {
-  background-color: #00923f;
+  background-color: #00923F;
+  color: #fff; }
+
+.nav-link-quina {
+  background-color: #23177A;
   color: #fff; }
 
 #nav-link-megasena {
@@ -540,10 +516,6 @@ animation:*/
 #nav-link-quina:hover {
   color: #fff;
   background-color: #3221b7; }
-
-.nav-link-quina {
-  background-color: #23177A;
-  color: #fff; }
 
 #loading {
   background: #f4f4f2 url("img/page-bg.png") repeat scroll 0 0;
@@ -724,15 +696,7 @@ animation:*/
   /* IE */
   -webkit-transform: scale(1.07);
   /* Safari */
-  transform: scale(1.07);
-  /*transform:rotate(360deg);
-  -ms-transform:rotate(360deg);
-  -webkit-transform:rotate(360deg);*/ }
-
-#icon-megasena:active {
-  transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg); }
+  transform: scale(1.07); }
 
 #icon-lotomania:hover {
   -ms-transform: scale(1.07);
