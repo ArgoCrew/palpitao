@@ -85,8 +85,8 @@ div.esfera-mobile {
   width: 26px;
   height: 26px;
   border-radius: 100px;
-  background-color: #fffcea;
-  background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
+  background-color: #00923F;
+  background: radial-gradient(at top left, #00923F 20%, #00923F);
   margin: 0px auto;
   -ms-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -123,7 +123,7 @@ div.div-jumbotron-quina {
 
 div.esfera {
   display: inline-block;
-  font-size: 32px;
+  font-size: 30px;
   width: 46px;
   height: 46px;
   border-radius: 100px;

@@ -9,7 +9,7 @@ $cor_azul_2: #2bb8ac;
   width: 130px;
   height: 130px;
 }
-@mixin header($cor_megasena{
+@mixin header($cor_megasena){
   background-color: $cor_megasena;
   color: white;
 } 
@@ -73,7 +73,7 @@ $cor_azul_2: #2bb8ac;
   -moz-box-shadow: 1px 3px 1px #666666;
   box-shadow: 1px 3px 1px #666666;
 }
-@mixin numeros-mobile($color) {
+@mixin numeros-mobile {
   display:inline;
   color: black;
   visibility: hidden;
