@@ -8,4 +8,4 @@ REST API using NodeJS for backend; AngularJS on the front end; MySQL Database.
 
 
 
-![alt text](https://github.com/ahsouza/palpitao/blob/master/public/shared/images/1.png)
+![alt text](https://github.com/ahsouza/palpitao/blob/master/public/shared/img/palpitao-screenshot.png)
