@@ -1,0 +1,916 @@
+$cor_quina: #23177A;
+$cor_megasena: #00923F;
+$cor_lotomania: #FF6028;
+$cor_lotofacil: #B1005F;
+@charset "UTF-8";
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 1px transparent;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+  
+  div.esfera {
+    display: none;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .div-numeros ol li {
+    display: inline;
+    font-size: 22px;    
+  }
+  .div-numeros {
+    display: none;
+  }
+  .div-numeros-mobile {
+    display: inline-block;
+  }
+  div.esfera-mobile {
+    visibility: visible;
+  }
+  .expandcollapse-item {
+    margin-top: 50px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  
+  div.esfera {
+    display: none;
+  }
+  div.esfera-mobile {
+    display: inline-block;
+  }
+  .expandcollapse-item {
+    margin-top: 50px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  div.esfera {
+    display: none;
+  }
+  
+  .div-numeros ol li {
+    font-size: 28px;
+  }
+  div.esfera-mobile {
+    display: inline-block;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .div-numeros ol li {
+    font-size: 72px;
+  }
+  div.div-numeros-mobile {
+    visibility: hidden;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .div-numeros ol li {
+    font-size: 72px;
+  }
+  div.div-numeros-mobile {
+    visibility: hidden;
+  }
+}
+/*--------------------STYLE DEAFULT------------------*/
+#screen-mobile{
+  width: 290px;
+}
+
+.div-numeros li {
+  display:inline;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+
+.div-numeros-mobile li{
+  display:inline;
+  color: black;
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+div.esfera-mobile {
+  display: inline-block;
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background-color: #fffcea;
+  background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
+  margin: 0px auto;
+  -ms-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+}
+div.esfera-mobile:hover {
+  width: 28px;
+  height: 28px;
+} 
+.titulo {
+  color: blue;
+  font-weight: bold;
+}
+/*Div Superior*/
+div.div-jumbotron-megasena {
+  background-color: #00923f;
+  color: white;
+}
+div.div-jumbotron-lotofacil {
+  background-color: #B1005F;
+  color: white;
+}
+div.div-jumbotron-lotomania {
+  background-color: #FF6028;
+  color: white;
+}
+div.div-jumbotron-quina {
+  background-color: #23177A;
+  color: white;
+}
+div.esfera {
+  display: inline-block;
+  font-size: 32px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #fffcea;
+  background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
+  margin: 0px auto;
+  -ms-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+}
+div.esfera:hover {
+  width: 48px;
+  height: 48px;
+} 
+ /*Button 'Palpitar'*/
+.btn-palpitar {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  animation: float 3s ease-out infinite;
+  position:absolute;
+  left:50%;
+  top:30%;
+  margin-left:-50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: -moz-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: -ms-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: -o-linear-gradient(top, #3498db, #2bb8ac);
+  background-image: linear-gradient(to bottom, #3498db, #2bb8ac);
+}
+.btn-palpitar:hover {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background: #00923F;  
+  background-image: -webkit-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: -moz-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: -ms-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: -o-linear-gradient(top, #00923F, #0eeb6e);
+  background-image: linear-gradient(to bottom, #00923F, #0eeb6e);
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}/*Button 'Palpitar'*/
+.btn-palpitar-quina {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  animation: float 3s ease-out infinite;
+  position:absolute;
+  left:50%;
+  top:30%;
+  margin-left:-50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+  background: #23177A;
+  background-image: -webkit-linear-gradient(top, #23177A, #23177A);
+  background-image: -moz-linear-gradient(top, #23177A, #23177A);
+  background-image: -ms-linear-gradient(top, #23177A, #23177A);
+  background-image: -o-linear-gradient(top, #23177A, #23177A);
+  background-image: linear-gradient(to bottom, #23177A, #23177A);
+}
+.btn-palpitar-quina:hover {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background: #23177A;  
+  background-image: -webkit-linear-gradient(top, #23177A, #23177A);
+  background-image: -moz-linear-gradient(top, #23177A, #23177A);
+  background-image: -ms-linear-gradient(top, #23177A, #23177A);
+  background-image: -o-linear-gradient(top, #23177A, #23177A);
+  background-image: linear-gradient(to bottom, #23177A, #23177A);
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+.btn-palpitar-quina:hover {
+  -webkit-animation-play-state: paused;
+}
+.btn-palpitar-quina:hover .descricao{
+  display: block;
+}
+.btn-palpitar-quina:hover .img-trevo{
+  display: none;
+}
+.btn-palpitar-lotomania {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  animation: float 3s ease-out infinite;
+  position:absolute;
+  left:50%;
+  top:30%;
+  margin-left:-50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+  background: #FF6028;
+  background-image: -webkit-linear-gradient(top, #FF6028, #FF6028);
+  background-image: -moz-linear-gradient(top, #FF6028, #FF6028);
+  background-image: -ms-linear-gradient(top, #FF6028, #FF6028);
+  background-image: -o-linear-gradient(top, #FF6028, #FF6028);
+  background-image: linear-gradient(to bottom, #FF6028, #FF6028);
+}
+.btn-palpitar-lotomania:hover {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background: #FF6028;  
+  background-image: -webkit-linear-gradient(top, #FF6028, #FF6028);
+  background-image: -moz-linear-gradient(top, #FF6028, #FF6028);
+  background-image: -ms-linear-gradient(top, #FF6028, #FF6028);
+  background-image: -o-linear-gradient(top, #FF6028, #FF6028);
+  background-image: linear-gradient(to bottom, #FF6028, #FF6028);
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+.btn-palpitar-lotomania:hover {
+  -webkit-animation-play-state: paused;
+}
+.btn-palpitar-lotomania:hover .descricao{
+  display: block;
+}
+.btn-palpitar-lotomania:hover .img-trevo{
+  display: none;
+}
+.btn-palpitar-lotofacil {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  animation: float 3s ease-out infinite;
+  position:absolute;
+  left:50%;
+  top:30%;
+  margin-left:-50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+  background: #B1005F;
+  background-image: -webkit-linear-gradient(top, #B1005F, #B1005F);
+  background-image: -moz-linear-gradient(top, #B1005F, #B1005F);
+  background-image: -ms-linear-gradient(top, #B1005F, #B1005F);
+  background-image: -o-linear-gradient(top, #B1005F, #B1005F);
+  background-image: linear-gradient(to bottom, #B1005F, #B1005F);
+  
+}
+.btn-palpitar-lotofacil:hover {
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background: #B1005F;  
+  background-image: -webkit-linear-gradient(top, #B1005F, #B1005F);
+  background-image: -moz-linear-gradient(top, #B1005F, #B1005F);
+  background-image: -ms-linear-gradient(top, #B1005F, #B1005F);
+  background-image: -o-linear-gradient(top, #B1005F, #B1005F);
+  background-image: linear-gradient(to bottom, #B1005F, #B1005F);
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+.btn-palpitar-lotofacil:hover {
+  -webkit-animation-play-state: paused;
+}
+.btn-palpitar-lotofacil:hover .descricao{
+  display: block;
+}
+.btn-palpitar-lotofacil:hover .img-trevo{
+  display: none;
+}
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
+.descricao {
+  display: none;
+  margin-top: 32px;
+  margin-left: -2px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.8);
+}
+.img-trevo{
+  width: 80px;
+  height: 80px;
+  margin-left: -2px;
+  margin-top: 4px;
+}
+.btn-palpitar:hover {
+  -webkit-animation-play-state: paused;
+}
+.btn-palpitar:hover .descricao{
+  display: block;
+}
+.btn-palpitar:hover .img-trevo{
+  display: none;
+}
+.concurso-descricao {
+
+}
+/******EFEITOS HOVER BUTTON *******/
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }   
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.btns {
+  text-align: center;
+  margin-top: 50px;
+}
+.efeito {
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.efeito-1 {
+  background-color: #28348A;
+}
+.efeito-1:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 64px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+.efeito-1:hover:before {
+  width: 100%;
+}
+.efeito-2 {
+  background-color: #772150;
+}
+.efeito-2:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+.expandcollapse-item {
+  overflow: hidden;
+  border-top:1px solid blue;
+}
+.expandcollapse-heading-collapsed {
+  cursor: pointer;
+  padding: 0px 20px;
+  position: relative;
+  z-index: 100000000;
+  color: black; 
+  background-color: white;
+  
+}
+.expandcollapse-item:first-of-type {
+  border-top:0px;
+}
+.expandcollapse-heading-collapsed p{
+  font-size: 16px;
+  font-weight: normal;
+  margin:0px;
+}
+.expandcollapse-heading-expanded {
+  cursor: pointer;
+  z-index: 100000000;
+  padding: 12px 20px;
+  position: relative;
+  color: white; 
+  background-color: white;
+}
+.expandcollapse-heading-expanded p{
+  font-size: 16px;
+  font-weight: bold;
+  margin:0px;
+}
+.expandcollapse-heading-collapsed > span,
+.expandcollapse-heading-expanded > span {
+  position:absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 0px;
+}
+.expand-collapse-content {
+  padding: 10px;
+}
+/*
+animation:*/
+.slideDown.ng-hide {
+  height:0;
+  transition:height 0.35s ease;
+  overflow:hidden;
+  position:relative;
+}
+.slideDown {
+  height:141px;
+  transition:height 0.35s ease;
+  overflow:hidden;
+  position:relative;
+}
+.slideDown.ng-hide-remove,
+.slideDown.ng-hide-add {
+  display:block!important;
+}
+.slideDown.ng-hide-add {
+  animation-name: hide;
+  -webkit-animation-name: hide;  
+
+  animation-duration: .5s; 
+  -webkit-animation-duration: .5s;
+
+  animation-timing-function: ease-in;  
+  -webkit-animation-timing-function: ease-in;  
+}
+.slideDown.ng-hide-remove {
+  animation-name: show;
+  -webkit-animation-name: show;  
+  animation-duration: .5s; 
+  -webkit-animation-duration: .5s;
+  animation-timing-function: ease-out;  
+  -webkit-animation-timing-function: ease-out;  
+}
+.nav-link-lotomania {
+  background-color: #FF6028;
+  color: #fff;
+}
+.nav-link-lotofacil {
+  background-color: #B1005F;
+  color: #fff;
+}
+.nav-link-megasena {
+  background-color: #00923f;
+  color: #fff;
+}
+#nav-link-megasena {
+  color: #fff;
+}
+#nav-link-megasena:hover {
+  color: #fff;
+  background-color: #48b54d;
+}
+#nav-link-lotofacil {
+  color: #fff;
+}
+#nav-link-lotofacil:hover {
+  color: #fff;
+  background-color: #d11271;
+}
+#nav-link-lotomania {
+  color: #fff;
+}
+#nav-link-lotomania:hover {
+  color: #fff;
+  background-color: #f2893e;
+}
+#nav-link-lotomania:active {
+  color: #fff;
+  background-color: pink;
+}
+#nav-link-quina {
+  color: #fff;
+}
+#nav-link-quina:hover {
+  color: #fff;
+  background-color: #3221b7;
+}
+.nav-link-quina {
+  background-color: #23177A;
+  color: #fff;
+}
+
+#loading {
+  background: #f4f4f2 url("img/page-bg.png") repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.bokeh {
+  border: 0.01em solid rgba(150, 150, 150, 0.1);
+  border-radius: 50%;
+  font-size: 100px;
+  height: 1em;
+  list-style: outside none none;
+  margin: 0 auto;
+  position: relative;
+  top: 35%;
+  width: 1em;
+  z-index: 2147483647;
+}
+.bokeh li {
+  border-radius: 50%;
+  height: 0.2em;
+  position: absolute;
+  width: 0.2em;
+}
+.bokeh li:nth-child(1) {
+  animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;
+  background: #00c176 none repeat scroll 0 0;
+  left: 50%;
+  margin: 0 0 0 -0.1em;
+  top: 0;
+  transform-origin: 50% 250% 0;
+}
+.bokeh li:nth-child(2) {
+  animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;
+  background: #ff003c none repeat scroll 0 0;
+  margin: -0.1em 0 0;
+  right: 0;
+  top: 50%;
+  transform-origin: -150% 50% 0;
+}
+.bokeh li:nth-child(3) {
+  animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;
+  background: #fabe28 none repeat scroll 0 0;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -0.1em;
+  transform-origin: 50% -150% 0;
+}
+.bokeh li:nth-child(4) {
+  animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;
+  background: #88c100 none repeat scroll 0 0;
+  margin: -0.1em 0 0;
+  top: 50%;
+  transform-origin: 250% 50% 0;
+}
+@keyframes opa {
+12% {
+  opacity: 0.8;
+}
+19.5% {
+  opacity: 0.88;
+}
+37.2% {
+  opacity: 0.64;
+}
+40.5% {
+  opacity: 0.52;
+}
+52.7% {
+  opacity: 0.69;
+}
+60.2% {
+  opacity: 0.6;
+}
+66.6% {
+  opacity: 0.52;
+}
+70% {
+  opacity: 0.63;
+}
+79.9% {
+  opacity: 0.6;
+}
+84.2% {
+  opacity: 0.75;
+}
+91% {
+  opacity: 0.87;
+  }
+}
+@keyframes rota {
+100% {
+  transform: rotate(360deg);
+ }
+}
+.jogos ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+.jogos .megasena {
+  color: #fff;
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+  position: relative;
+  background-color: green;
+    border-radius: 10%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+.jogos .lotofacil {
+  color: #fff;
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+  position: relative;
+  background-color: #B1005F;
+  border-radius: 10%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+.jogos .quina {
+  color: #fff;
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+  position: relative;
+  background-color: darkblue;
+  border-radius: 10%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+.jogos .lotomania {
+  color: #fff;
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+  position: relative;
+  background-color: red;
+  border-radius: 10%;
+  -webkit-box-shadow: 1px 3px 1px #666666;
+  -moz-box-shadow: 1px 3px 1px #666666;
+  -o-box-shadow: 1px 3px 1px #666666;
+  box-shadow: 1px 3px 1px #666666;
+  text-decoration: none;
+  border: solid #ffffff 2px;
+}
+#icon-megasena {
+  width: 130px;
+  height: 130px;
+  /*-webkit-transition: -webkit-transform .3s ease-in-out;
+  -ms-transition: -ms-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;  */
+}
+#icon-lotomania {
+  width: 130px;
+  height: 130px;
+}
+#icon-lotofacil {
+  width: 130px;
+  height: 130px;
+}
+#icon-quina {
+  width: 130px;
+  height: 130px;
+}
+#icon-megasena:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+  /*transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);*/
+}
+#icon-megasena:active {
+  
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+}
+#icon-lotomania:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+}
+#icon-lotofacil:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+}
+#icon-quina:hover {
+  -ms-transform: scale(1.07); /* IE */
+  -webkit-transform: scale(1.07); /* Safari */
+  transform: scale(1.07);
+}
+span {
+  font-size: 26px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+}
+.jogos li:nth-child(even) {
+  transform: rotate(5deg);
+}
+.jogos li:nth-child(odd) {
+  transform: rotate(-5deg);
+}
+.jogos li:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
+
+#indisponivel-txt {
+  text-align: center;
+}
+
+.loading {
+animation: pulse 1.5s infinite;
+background-color: #666;
+border-radius: 50%;
+font: 0/0 serif;
+position: absolute;
+}
+@keyframes pulse {
+  0% {
+  width: 0;
+  height: 0;
+  opacity: 1;
+  top: 50px;
+  left: 50px;
+  } 
+  100% {
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  top: 35px;
+  left: 35px;
+  }
+} 
+.tombol-ani {
+  font-family: 'gotham_mediumregular','Montserrat',sans-serif;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  background: #388e3c;
+  max-width: 430px;
+  position: relative;
+  padding: 10px 0px;
+  display: table;
+  text-transform: uppercase;
+  box-shadow: 0 10px 0 -6px #aaa;
+  transition: all 0.2s;
+  top: 0;
+  width: 100%;}
+.tombol-ani:hover {padding:20px 0px; box-shadow:0 6px 0 -6px #bbb; top:2px;background:#388e3c;}
+.tombol-ani * {display:inline-table; vertical-align:middle;  transition:all 0.2s;  transform-style: preserve-3d; }
+.tombol-ani p {max-width: 100%;font-size: 18px;line-height: 16px;text-align: left;font-weight: 800;margin-top: 8px;margin-bottom: 8px;width: 70%;}
+.tombol-ani p span { font-size:9px;font-weight: 400;font-family:'gotham_book','Montserrat',sans-serif;}
+.tombol-ani i { width:16%; text-align:center; font-size:24px !important; z-index:5;}
+.tombol-ani p + i { width:12%; font-size:16px !important; position:relative;right:-8px;}
+.tombol-ani:after { background:#dcedc8; content:''; right:0; position:absolute; top:0; bottom:0; width:12%; z-index:0;}
+.tombol-ani:hover p + i { transform:scale(1.6);}
+
+.tombol-ani2 {
+  font-family: 'gotham_mediumregular','Montserrat',sans-serif;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  background: #1f628d;
+  max-width: 430px;
+  position: relative;
+  padding: 10px 0px;
+  display: table;
+  text-transform: uppercase;
+  box-shadow: 0 10px 0 -6px #aaa;
+  transition: all 0.2s;
+  top: 0;
+  width: 100%;}
+.tombol-ani2:hover {padding:20px 0px; box-shadow:0 6px 0 -6px #bbb; top:2px;background:#233e7d;}
+.tombol-ani2 * {display:inline-table; vertical-align:middle;  transition:all 0.2s;  transform-style: preserve-3d; }
+.tombol-ani2 p {max-width: 100%;font-size: 18px;line-height: 16px;text-align: left;font-weight: 800;margin-top: 8px;margin-bottom: 8px;width:70%;}
+.tombol-ani2 p span { font-size:9px;font-weight: 400;font-family:'gotham_book','Montserrat',sans-serif;}
+.tombol-ani2 i { width:16%; text-align:center; font-size:24px !important; z-index:5;}
+.tombol-ani2 p + i { width:12%; font-size:16px !important; position:relative;right:-8px;}
+.tombol-ani2:after { background:#1b3f92; content:''; right:0; position:absolute; top:0; bottom:0; width:12%; z-index:0;}
+.tombol-ani2:hover p + i { transform:scale(1.6);}
+
+.tombol-ane1{width:42%;display: inline-table !important;margin-top: 30px;}
+.tombol-ane2{width:42%;display: inline-table !important;margin-top: 30px;}
+.tombol-view {
+  background-color: #159DBF !important;
+  border-radius: 0px !important;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 8px 20px !important;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.tombol-one {display: inline-block;}
+.tombol-one span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;font-size: 1.2rem;font-family:'gotham_mediumregular','Montserrat',sans-serif;}
+.tombol-one span:after {content: '»';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+.tombol-one:hover {background: #e11f28 !important;padding: 12px 30px !important;}
+.tombol-one:hover span {padding-right: 25px;}
+.tombol-one:hover span:after {opacity: 1;right: 0;}
