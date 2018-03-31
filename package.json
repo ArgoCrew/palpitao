@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node --harmony ./serve.js"
   },
-  "author": "",
+  "author": "ahsouza",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.6.7",
@@ -22,7 +22,6 @@
     "mysql2": "^1.5.1",
     "node-sass": "^4.8.3",
     "nodemon": "^1.12.1",
-    "sass-watch": "^0.1.0",
     "sequelize": "^4.22.8",
     "sequelize-cli": "^3.1.0"
   }
