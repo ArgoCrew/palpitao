@@ -8,8 +8,6 @@
     "npm": "~3.10.10"
   },
   "scripts": {
-    "test": "node-sass public/shared/css/custom.scss -o public/shared/css/",
-    "test:watch": "node-sass public/shared/css/custom.scss -wo public/shared/css/",
     "start": "node --harmony ./serve.js"
   },
   "author": "",
