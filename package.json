@@ -7,6 +7,13 @@
     "node": "~6.11.1",
     "npm": "~3.10.10"
   },
+  "keywords": [
+    "node-js",
+    "angular-js",
+    "javacript",
+    "mysql",
+    "sequelize"
+  ],
   "scripts": {
     "start": "node --harmony ./serve.js"
   },
