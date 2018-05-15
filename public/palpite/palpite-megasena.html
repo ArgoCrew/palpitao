@@ -1,23 +1,23 @@
-  <!-- BUTTON PALPITÃO -->
-  <div class="container-fluid">
+<div class="container-fluid">
     <!-- begin header -->
-    <div class="jumbotron div-jumbotron-megasena"><br><br>
-      <h1 class="text-center titulo animated slideInDown">
-        MINHA MEGA SENA
-      </h1>
+  <div class="jumbotron div-jumbotron-megasena"><br><br>
+    <h1 class="text-center titulo animated slideInDown">
+      MINHA MEGA SENA
+    </h1>
       <p ng-if="mensagem.texto">
         {{mensagem.texto}}
       </p>
-    </div>  
-    <div class="row">
-      <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 animated zoomIn">
-        <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
-        <!-- BUTTON TO DESKTOPS,TABLETS AND LARGE DECIVES -->
-        <a ng-click="exibir();" class="btn btn-primary btn-palpitar">
-          <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
-          <div class="descricao text-center" >Palpitão</div>
-        </a>
-      </div>
+  </div>  
+  
+<div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 animated zoomIn">
+    <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
+    <!-- BUTTON TO DESKTOPS,TABLETS AND LARGE DECIVES -->
+    <a ng-click="exibir();" class="btn btn-primary btn-palpitar">
+      <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
+      <div class="descricao text-center" >Palpitão</div>
+    </a>
+  </div>
 <!-- Button trigger modal -->
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -38,10 +38,11 @@
     </div>
   </div>
 </div>
-
+<!-- Modal -->
   <div class="panel panel-success" ng-show = "goCats">
     Concuros
   </div>    
+
   <div class="tombol-ane1 animated slideInLeft" > 
     <a class="tombol-ani" data-toggle="modal" data-target="#myModal">
     <i class="fal fa-eye x2"></i>
@@ -49,5 +50,7 @@
     <i class="fa fa-chevron-right"></i>
     </a>
   </div>
+
+</div>
 </div>
   <!-- END BUTTON -->
