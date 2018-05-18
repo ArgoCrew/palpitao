@@ -29,9 +29,31 @@
     margin-top: 50px; } 
   div.tombol-ane1 {
   margin-top: 60%; }
-  div.btn-palpitar {
-    margin-top: 50%;
+  a.btn-palpitar {
+    margin-top: 38%;
+    width: 80px;
+    height: 80px;
+    left: 52%;
+    top: 30%;
+    margin-left: -50px;
   }
+  img.img-trevo {
+    width: 60px;
+    height: 60px;
+    margin-left: -3px;
+    margin-top: 4px;
+  }
+  div.descricao{
+    font-size: 9px;
+    
+  }
+  div.tombol-ane1 .descricao-button-modal{
+    display: none;
+  }
+  div.tombol-ane1 .descricao-button-modal-mobile{
+    font-size: 12px;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -43,10 +65,31 @@
   .expandcollapse-item {
     margin-top: 50px; } 
   div.tombol-ane1 {
-    margin-top: 80%; }
-  div.btn-palpitar {
-    margin-top: 50%;
+    margin-top: 4%; }
+  a.btn-palpitar {
+    margin-top: 0%;
+    width: 80px;
+    height: 80px;
+    left: 52%;
+    top: 30%;
+    margin-left: 20%;
   }
+  img.img-trevo {
+    width: 60px;
+    height: 60px;
+    margin-left: -3px;
+    margin-top: 4px;
+  }
+  div.descricao{
+    font-size: 9px;
+  }
+  div.tombol-ane1 .descricao-button-modal{
+    display: none;
+  }
+  div.tombol-ane1 .descricao-button-modal-mobile{
+    font-size: 12px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -62,6 +105,9 @@
   div.btn-palpitar {
     margin-top: 50%;
   }
+  div.tombol-ane1 .descricao-button-modal-mobile{
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -75,6 +121,9 @@
   div.btn-palpitar {
     margin-top: 50%;
   }
+  div.tombol-ane1 .descricao-button-modal-mobile{
+    display: none;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -85,12 +134,20 @@
     visibility: hidden; } 
   div.tombol-ane1 {
     margin-top: 25%; }
+  div.tombol-ane1 .descricao-button-modal-mobile{
+    display: none;
+  }
 }
 
 /*--------------------STYLE DEAFULT------------------*/
 #screen-mobile {
   width: 290px; }
-
+.div-numeros {
+  padding-right: 120px;
+}
+.div-numeros-mobile {
+  padding-right: 90px;
+}
 .div-numeros li {
   display: inline;
   color: black;
@@ -108,7 +165,7 @@
 
 div.esfera-mobile {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   width: 26px;
   height: 26px;
   border-radius: 100px;
@@ -156,7 +213,7 @@ div.esfera {
   border-radius: 100px;
   background-color: #00923F;
   background: radial-gradient(at top left, #edf2f2 20%, #dbdbdb);
-  margin: 0px auto;
+  margin-left: 10px;
   -ms-border-radius: 100px;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -168,7 +225,9 @@ div.esfera {
 .esfera:hover {
   width: 48px;
   height: 48px; }
-
+.span-tutorial{
+  font-size: 11px;
+}
 /*Button 'Palpitar'*/
 .btn-palpitar {
   -webkit-transition: 0.5s ease-in;
