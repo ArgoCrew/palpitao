@@ -12,13 +12,13 @@ app.use(BodyParser.urlencoded({extend: true}));
 app.use(ErrorHandler())
 
 // -- LISTANDO PALPITES 
+var id_test= 01;
 app.get('/api/v1/palpites/megasena', (req, res) => {
-  const RANDON_ID = Math.floor(Math.random()*(27-1+1)+1);
   palpites = palpite.modelo.PalpiteMegasena
     .findAll({
       where: {
         palpitado_em: null,
-        id: RANDON_ID,
+        id: id_test,
       }
     })
     .then(palpitesMegasena => {
@@ -27,6 +27,7 @@ app.get('/api/v1/palpites/megasena', (req, res) => {
     .catch(err => {
       throw err
     })
+    id_test++;
 });
 
 app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
