@@ -12,13 +12,13 @@ app.use(BodyParser.urlencoded({extend: true}));
 app.use(ErrorHandler())
 
 // -- LISTANDO PALPITES 
-var id_test= 01;
+var id_number= 01;
 app.get('/api/v1/palpites/megasena', (req, res) => {
   palpites = palpite.modelo.PalpiteMegasena
     .findAll({
       where: {
         palpitado_em: null,
-        id: id_test,
+        id: id_number,
       }
     })
     .then(palpitesMegasena => {
@@ -27,8 +27,16 @@ app.get('/api/v1/palpites/megasena', (req, res) => {
     .catch(err => {
       throw err
     })
-    id_test++;
+    if (id_number < 250000) {
+      id_number++;
+    }
 });
+
+
+
+  
+
+
 
 app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   console.info(req.query)
