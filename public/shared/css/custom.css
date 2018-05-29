@@ -23,8 +23,12 @@
     display: none; }
   .div-numeros-mobile {
     display: inline-block; }
+    
   div.esfera-mobile {
-    visibility: visible; }
+    visibility: visible; 
+    width: 4px;
+    height: 4px;
+  }
   .expandcollapse-item {
     margin-top: 50px; } 
   div.tombol-ane1 {
@@ -175,9 +179,9 @@ div.download p {
 }
 div.esfera-mobile {
   display: inline-block;
-  font-size: 18px;
-  width: 26px;
-  height: 26px;
+  font-size: 16px;
+  width: 22px;
+  height: 22px;
   border-radius: 100px;
   background-color: #00923F;
   background: radial-gradient(at top left, #00923F 20%, #00923F);
@@ -191,8 +195,8 @@ div.esfera-mobile {
   box-shadow: 1px 3px 1px #666666; }
 
 div.esfera-mobile:hover {
-  width: 28px;
-  height: 28px; }
+  width: 26px;
+  height: 26px; }
 
 .titulo {
   color: blue;
