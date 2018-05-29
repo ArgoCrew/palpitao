@@ -8,7 +8,7 @@ const PalpiteMegasena = ds.mysql.define('megasena', {
     get() {
       _numeros = this.getDataValue('numeros')
        return _numeros.split(',')
-                     // .map(s => { return parseInt(s) })
+                     .map(s => { return parseInt(s) })
                      // .sort()
     },
   }
