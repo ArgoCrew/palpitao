@@ -12,26 +12,27 @@ app.use(BodyParser.urlencoded({extend: true}));
 app.use(ErrorHandler())
 
 // -- LISTANDO PALPITES 
-var n = 01;
 app.get('/api/v1/palpites/megasena', (req, res) => {
-  palpites = palpite.modelo.PalpiteMegasena
+  palpite.modelo.PalpiteMegasena
     .findAll({
       where: {
         palpitado_em: null,
-        id: n
-      }
+      },
+      limit: 1
     })
     .then(palpitesMegasena => {
+      for(i=0; i< palpitesMegasena.length; i++){
+        palpitesMegasena[i].destroy()
+      }
       res.json(palpitesMegasena)
     })
+    
     .catch(err => {
       throw err
     })
-    if (n<250000) {
-      n++;
-    }
+    
 });
-
+// -- DELETANDO PALPITES 
 app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   console.info(req.query)
   let _id = [];
@@ -56,6 +57,28 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
     return res.status(500).json(err)
   })
 });
+
+
+
+
+
+
+
+
+
+
+
+app.post('/api/v1/palpites/megasena/:id', (req, res) => {
+    
+});
+
+
+
+
+
+
+
+
 
 const SERVICE_PREFIX = process.env.SERVICE_PREFIX;
 
