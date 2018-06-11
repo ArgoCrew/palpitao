@@ -58,28 +58,6 @@ app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   })
 });
 
-
-
-
-
-
-
-
-
-
-
-app.post('/api/v1/palpites/megasena/:id', (req, res) => {
-    
-});
-
-
-
-
-
-
-
-
-
 const SERVICE_PREFIX = process.env.SERVICE_PREFIX;
 
 const PORT = process.env.PORT || process.env[`${SERVICE_PREFIX}_PORT`] || 8080,
