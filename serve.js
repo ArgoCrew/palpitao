@@ -13,22 +13,26 @@ app.use(ErrorHandler())
 
 // -- LISTANDO PALPITES 
 app.get('/api/v1/palpites/megasena', (req, res) => {
-  const RANDON_ID = Math.floor(Math.random()*(27-1+1)+1);
-  palpites = palpite.modelo.PalpiteMegasena
+  palpite.modelo.PalpiteMegasena
     .findAll({
       where: {
         palpitado_em: null,
-        id: RANDON_ID,
-      }
+      },
+      limit: 1
     })
     .then(palpitesMegasena => {
+      for(i=0; i< palpitesMegasena.length; i++){
+        palpitesMegasena[i].destroy()
+      }
       res.json(palpitesMegasena)
     })
+    
     .catch(err => {
       throw err
     })
+    
 });
-
+// -- DELETANDO PALPITES 
 app.delete('/api/v1/palpites/megasena/:id', (req, res) => {
   console.info(req.query)
   let _id = [];

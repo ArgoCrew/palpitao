@@ -75,7 +75,7 @@ $cor_azul_2: #2bb8ac;
 }
 @mixin numeros-mobile {
   display:inline;
-  color: black;
+  color: white;
   visibility: hidden;
   text-align: center;
   width: 100%;
@@ -760,7 +760,7 @@ position: absolute;
   text-decoration: none;
   color: #fff;
   letter-spacing: 1px;
-  background: #388e3c;
+  background: $cor_megasena;
   max-width: 430px;
   position: relative;
   padding: 10px 0px;
