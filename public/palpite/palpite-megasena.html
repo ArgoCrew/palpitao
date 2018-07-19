@@ -1,23 +1,23 @@
-  <!-- BUTTON PALPITÃO -->
-  <div class="container-fluid">
+<div class="container-fluid">
     <!-- begin header -->
-    <div class="jumbotron div-jumbotron-megasena"><br><br>
-      <h1 class="text-center titulo animated slideInDown">
-        MINHA MEGA SENA
-      </h1>
+  <div class="jumbotron div-jumbotron-megasena"><br><br>
+    <h1 class="text-center titulo animated slideInDown">
+      MINHA MEGA SENA
+    </h1>
       <p ng-if="mensagem.texto">
         {{mensagem.texto}}
       </p>
-    </div>  
-    <div class="row">
-      <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 animated zoomIn">
-        <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
-        <!-- BUTTON TO DESKTOPS,TABLETS AND LARGE DECIVES -->
-        <a ng-click="exibir();" class="btn btn-primary btn-palpitar">
-          <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
-          <div class="descricao text-center" >Palpitão</div>
-        </a>
-      </div>
+  </div>  
+  
+<div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 animated zoomIn">
+    <ppt-palpite-megasena palpites="palpitesMegasena"></ppt-palpite-megasena>
+    <!-- BUTTON TO DESKTOPS,TABLETS AND LARGE DECIVES -->
+    <a ng-click="exibir();" class="btn btn-primary btn-palpitar">
+      <img class="img-trevo" src="../shared/imagem-trevo-da-sorte.png" alt="Trevo da Sorte">
+      <div class="descricao text-center" >Palpitão</div>
+    </a>
+  </div>
 <!-- Button trigger modal -->
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -25,12 +25,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" id="myModalLabel">CONCURSO 2023 </h3>
-        <h4>SORTEIO: 17/03/2018</h4>
+        <h3 class="modal-title" id="myModalLabel">SIGA AS INSTRUÇÕES: </h3>
       </div>
       <div class="modal-body">
-        <h5>PRÊMIO: R$ 60 MILHÕES</h5>
-        <h5>LOCAL DO SORTEIO: CAMINHÃO DA SORTE EM MANHUAÇU, MG</h5>
+        
+        <h5>A cada clique no botão, aparece um jogo/palpite de 6 dezenas otimizadas de combinação única, ou seja, sem repetição e com base em muita estatística.
+          <h5>Guarde os jogos que você pegou e use-os para fazer suas apostas em todos os concursos da Mega Sena</h5>
+          <h5>É recomendável pegar apenas dois jogos, para você apostar sem gastar muito dinheiro</h5>
+          <h5>Indique o Sistema Palpitão - Minha Mega Sena para mais pessoas.</h5>
+          <h5>Boa Sorte!</h5>
+        </h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
@@ -38,16 +42,22 @@
     </div>
   </div>
 </div>
-
+<!-- Modal -->
   <div class="panel panel-success" ng-show = "goCats">
     Concuros
   </div>    
+
   <div class="tombol-ane1 animated slideInLeft" > 
     <a class="tombol-ani" data-toggle="modal" data-target="#myModal">
     <i class="fal fa-eye x2"></i>
-    <p><strong>ÚLTIMO CONCURSO</strong><br><span>Click para exibir o último concurso da mega-sena</span></p>
+    <p class="descricao-button-modal"><strong>ATENÇÃO!</strong><br><span class="span-tutorial"><strong>Não desperdice nenhum palpite</strong></span class="span-tutorial"><br><strong class="span-tutorial">Click e siga as instruções</strong><br></p>
+
+    <p class="descricao-button-modal-mobile"><strong>INSTRUÇÕES</strong></p>
+
     <i class="fa fa-chevron-right"></i>
     </a>
   </div>
+
+</div>
 </div>
   <!-- END BUTTON -->

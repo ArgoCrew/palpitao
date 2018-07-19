@@ -16,13 +16,13 @@ angular.module('palpite.megasena')
         function(erro) {
           console.log(erro);
           $scope.mensagem = {
-            texto: 'Não foi possível obter todos Palpites da Megasena! Por favor, tente mais tarde. '
+            texto: 'Não foi possível obter Palpites da Megasena!'
           }
         }
       );
     }
     $scope.exibir = function() {
-    sugerirPalpitesMegasena();
+      sugerirPalpitesMegasena();
       $scope.sugerirPalpitesMegasena = sugerirPalpitesMegasena;    
     }
 
