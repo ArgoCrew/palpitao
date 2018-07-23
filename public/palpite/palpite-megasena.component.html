@@ -32,7 +32,11 @@
             <li ng-repeat = "palpite in $ctrl.palpites">
               <ol>
                 <li ng-repeat = "n in palpite.numeros"  class = "li-numeros animated fadeInUp">
-                  <div class="esfera-mobile animated zoomIn">
+                  <div ng-if="n <=9" class="esfera-mobile animated zoomIn">
+                    {{"0" + n}}
+                  </div>
+
+                  <div ng-if="n >9" class="esfera-mobile animated zoomIn">
                     {{n}}
                   </div>
                 </li>
